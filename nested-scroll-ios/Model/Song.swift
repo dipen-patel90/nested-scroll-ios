@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+
+struct Song{
+    let uniquId:String
+    let image:String
+    let title:String
+    let artist:[String]
+}

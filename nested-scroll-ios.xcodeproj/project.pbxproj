@@ -9,13 +9,18 @@
 /* Begin PBXBuildFile section */
 		E16FA3322C0A5EF7000D869A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16FA3312C0A5EF7000D869A /* AppDelegate.swift */; };
 		E16FA3342C0A5EF7000D869A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16FA3332C0A5EF7000D869A /* SceneDelegate.swift */; };
-		E16FA3362C0A5EF7000D869A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16FA3352C0A5EF7000D869A /* ViewController.swift */; };
-		E16FA3392C0A5EF7000D869A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E16FA3372C0A5EF7000D869A /* Main.storyboard */; };
 		E16FA33B2C0A5EF9000D869A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E16FA33A2C0A5EF9000D869A /* Assets.xcassets */; };
 		E16FA33E2C0A5EF9000D869A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E16FA33C2C0A5EF9000D869A /* LaunchScreen.storyboard */; };
 		E16FA3492C0A5EF9000D869A /* nested_scroll_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16FA3482C0A5EF9000D869A /* nested_scroll_iosTests.swift */; };
 		E16FA3532C0A5EF9000D869A /* nested_scroll_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16FA3522C0A5EF9000D869A /* nested_scroll_iosUITests.swift */; };
 		E16FA3552C0A5EF9000D869A /* nested_scroll_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16FA3542C0A5EF9000D869A /* nested_scroll_iosUITestsLaunchTests.swift */; };
+		E16FA3632C0A6144000D869A /* SongListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16FA3622C0A6144000D869A /* SongListViewController.swift */; };
+		E16FA3662C0A62F3000D869A /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16FA3652C0A62F3000D869A /* Song.swift */; };
+		E16FA3692C0A6362000D869A /* SongViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16FA3682C0A6362000D869A /* SongViewModel.swift */; };
+		E16FA36C2C0A6416000D869A /* SongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16FA36B2C0A6416000D869A /* SongTableViewCell.swift */; };
+		E16FA36F2C0A64A3000D869A /* ColorExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16FA36E2C0A64A3000D869A /* ColorExtention.swift */; };
+		E16FA3712C0A654D000D869A /* ArtistCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16FA3702C0A654D000D869A /* ArtistCollectionViewCell.swift */; };
+		E16FA3742C0A6763000D869A /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16FA3732C0A6763000D869A /* Observable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +44,6 @@
 		E16FA32E2C0A5EF7000D869A /* nested-scroll-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "nested-scroll-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E16FA3312C0A5EF7000D869A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E16FA3332C0A5EF7000D869A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E16FA3352C0A5EF7000D869A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E16FA3382C0A5EF7000D869A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E16FA33A2C0A5EF9000D869A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E16FA33D2C0A5EF9000D869A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E16FA33F2C0A5EF9000D869A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +52,13 @@
 		E16FA34E2C0A5EF9000D869A /* nested-scroll-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "nested-scroll-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E16FA3522C0A5EF9000D869A /* nested_scroll_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nested_scroll_iosUITests.swift; sourceTree = "<group>"; };
 		E16FA3542C0A5EF9000D869A /* nested_scroll_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nested_scroll_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E16FA3622C0A6144000D869A /* SongListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListViewController.swift; sourceTree = "<group>"; };
+		E16FA3652C0A62F3000D869A /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		E16FA3682C0A6362000D869A /* SongViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongViewModel.swift; sourceTree = "<group>"; };
+		E16FA36B2C0A6416000D869A /* SongTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongTableViewCell.swift; sourceTree = "<group>"; };
+		E16FA36E2C0A64A3000D869A /* ColorExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtention.swift; sourceTree = "<group>"; };
+		E16FA3702C0A654D000D869A /* ArtistCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistCollectionViewCell.swift; sourceTree = "<group>"; };
+		E16FA3732C0A6763000D869A /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +109,14 @@
 		E16FA3302C0A5EF7000D869A /* nested-scroll-ios */ = {
 			isa = PBXGroup;
 			children = (
+				E16FA3722C0A6748000D869A /* Utils */,
+				E16FA36D2C0A646E000D869A /* Extention */,
+				E16FA36A2C0A63F5000D869A /* Cell */,
+				E16FA3672C0A6346000D869A /* ViewModel */,
+				E16FA3642C0A62DB000D869A /* Model */,
+				E16FA3612C0A6108000D869A /* ViewController */,
 				E16FA3312C0A5EF7000D869A /* AppDelegate.swift */,
 				E16FA3332C0A5EF7000D869A /* SceneDelegate.swift */,
-				E16FA3352C0A5EF7000D869A /* ViewController.swift */,
-				E16FA3372C0A5EF7000D869A /* Main.storyboard */,
 				E16FA33A2C0A5EF9000D869A /* Assets.xcassets */,
 				E16FA33C2C0A5EF9000D869A /* LaunchScreen.storyboard */,
 				E16FA33F2C0A5EF9000D869A /* Info.plist */,
@@ -125,6 +139,55 @@
 				E16FA3542C0A5EF9000D869A /* nested_scroll_iosUITestsLaunchTests.swift */,
 			);
 			path = "nested-scroll-iosUITests";
+			sourceTree = "<group>";
+		};
+		E16FA3612C0A6108000D869A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E16FA3622C0A6144000D869A /* SongListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E16FA3642C0A62DB000D869A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E16FA3652C0A62F3000D869A /* Song.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E16FA3672C0A6346000D869A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E16FA3682C0A6362000D869A /* SongViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E16FA36A2C0A63F5000D869A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E16FA36B2C0A6416000D869A /* SongTableViewCell.swift */,
+				E16FA3702C0A654D000D869A /* ArtistCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		E16FA36D2C0A646E000D869A /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				E16FA36E2C0A64A3000D869A /* ColorExtention.swift */,
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
+		E16FA3722C0A6748000D869A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E16FA3732C0A6763000D869A /* Observable.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +296,6 @@
 			files = (
 				E16FA33E2C0A5EF9000D869A /* LaunchScreen.storyboard in Resources */,
 				E16FA33B2C0A5EF9000D869A /* Assets.xcassets in Resources */,
-				E16FA3392C0A5EF7000D869A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +320,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E16FA3362C0A5EF7000D869A /* ViewController.swift in Sources */,
+				E16FA36C2C0A6416000D869A /* SongTableViewCell.swift in Sources */,
+				E16FA3662C0A62F3000D869A /* Song.swift in Sources */,
 				E16FA3322C0A5EF7000D869A /* AppDelegate.swift in Sources */,
 				E16FA3342C0A5EF7000D869A /* SceneDelegate.swift in Sources */,
+				E16FA3742C0A6763000D869A /* Observable.swift in Sources */,
+				E16FA3632C0A6144000D869A /* SongListViewController.swift in Sources */,
+				E16FA3692C0A6362000D869A /* SongViewModel.swift in Sources */,
+				E16FA36F2C0A64A3000D869A /* ColorExtention.swift in Sources */,
+				E16FA3712C0A654D000D869A /* ArtistCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +365,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E16FA3372C0A5EF7000D869A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E16FA3382C0A5EF7000D869A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E16FA33C2C0A5EF9000D869A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -440,15 +500,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "nested-scroll-ios/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -467,15 +527,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "nested-scroll-ios/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ListViewController: UIViewController {
+class SongListViewController: UIViewController {
 
     let songTableView = UITableView()
     
@@ -69,7 +69,7 @@ class ListViewController: UIViewController {
 }
 
 
-extension ListViewController : UITableViewDelegate, UITableViewDataSource {
+extension SongListViewController : UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
