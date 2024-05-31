@@ -9,6 +9,12 @@ import UIKit
 
 class SongListViewController: UIViewController {
 
+    let searchController: UISearchController = {
+        let searchController = UISearchController(searchResultsController: nil)
+        searchController.searchBar.placeholder = "Enter Song Title"
+       return searchController
+    }()
+    
     let songTableView = UITableView()
     
     var songsList : [Song] = []
@@ -29,17 +35,20 @@ class SongListViewController: UIViewController {
     
     func initViews() {
         if let vw = self.view{
+            
             vw.backgroundColor = .systemBackground
             title = "Song List"
             navigationController?.navigationBar.prefersLargeTitles = true
+            navigationItem.searchController = searchController
             
             vw.addSubview(songTableView)
-                        
+            
+            
             songTableView.translatesAutoresizingMaskIntoConstraints = false
             NSLayoutConstraint.activate(
                 [
-                    songTableView.topAnchor.constraint(equalTo: vw.topAnchor),
                     songTableView.leadingAnchor.constraint(equalTo: vw.leadingAnchor),
+                    songTableView.topAnchor.constraint(equalTo: vw.topAnchor),
                     songTableView.trailingAnchor.constraint(equalTo: vw.trailingAnchor),
                     songTableView.bottomAnchor.constraint(equalTo: vw.bottomAnchor)
                 ]
@@ -53,6 +62,8 @@ class SongListViewController: UIViewController {
         
         songTableView.delegate = self
         songTableView.dataSource = self
+        
+        searchController.searchBar.delegate = self
     }
     
     func bindViews() {
@@ -89,5 +100,12 @@ extension SongListViewController : UITableViewDelegate, UITableViewDataSource {
         cell.contentView.isUserInteractionEnabled = false
         
         return cell
+    }
+}
+
+extension SongListViewController : UISearchBarDelegate {
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        viewModel.filterSongs(searchKey: searchText)
     }
 }
