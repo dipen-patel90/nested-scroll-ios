@@ -8,11 +8,11 @@
 import UIKit
 
 class SongListViewController: UIViewController {
-
+    
     let searchController: UISearchController = {
         let searchController = UISearchController(searchResultsController: nil)
         searchController.searchBar.placeholder = "Enter Song Title"
-       return searchController
+        return searchController
     }()
     
     let songTableView = UITableView()
@@ -98,8 +98,17 @@ extension SongListViewController : UITableViewDelegate, UITableViewDataSource {
         
         cell.selectionStyle = .none
         cell.contentView.isUserInteractionEnabled = false
+        cell.delegate = self
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let song = songsList[indexPath.row]
+        
+        let vm = SongDetailViewModel(song: song)
+        let vc = SongDetailViewController(detailViewModel: vm)
+        self.navigationController?.pushViewController(vc, animated: false)
     }
 }
 
@@ -107,5 +116,11 @@ extension SongListViewController : UISearchBarDelegate {
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         viewModel.filterSongs(searchKey: searchText)
+    }
+}
+
+extension SongListViewController : SongTableViewCellDelegate {
+    func onArtistTap(song: Song?, artist: String) {
+        showToast(message: "Song: \(song?.title ?? "") \n Artist: \(artist)")
     }
 }

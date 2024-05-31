@@ -21,6 +21,9 @@
 		E16FA36F2C0A64A3000D869A /* ColorExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16FA36E2C0A64A3000D869A /* ColorExtention.swift */; };
 		E16FA3712C0A654D000D869A /* ArtistCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16FA3702C0A654D000D869A /* ArtistCollectionViewCell.swift */; };
 		E16FA3742C0A6763000D869A /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16FA3732C0A6763000D869A /* Observable.swift */; };
+		E16FA3782C0A7A56000D869A /* SongDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16FA3762C0A7A56000D869A /* SongDetailViewController.swift */; };
+		E16FA3792C0A7A56000D869A /* SongDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E16FA3772C0A7A56000D869A /* SongDetailViewController.xib */; };
+		E16FA37B2C0A7B85000D869A /* SongDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16FA37A2C0A7B85000D869A /* SongDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		E16FA36E2C0A64A3000D869A /* ColorExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtention.swift; sourceTree = "<group>"; };
 		E16FA3702C0A654D000D869A /* ArtistCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistCollectionViewCell.swift; sourceTree = "<group>"; };
 		E16FA3732C0A6763000D869A /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		E16FA3762C0A7A56000D869A /* SongDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetailViewController.swift; sourceTree = "<group>"; };
+		E16FA3772C0A7A56000D869A /* SongDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SongDetailViewController.xib; sourceTree = "<group>"; };
+		E16FA37A2C0A7B85000D869A /* SongDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +151,8 @@
 			isa = PBXGroup;
 			children = (
 				E16FA3622C0A6144000D869A /* SongListViewController.swift */,
+				E16FA3762C0A7A56000D869A /* SongDetailViewController.swift */,
+				E16FA3772C0A7A56000D869A /* SongDetailViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -161,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				E16FA3682C0A6362000D869A /* SongViewModel.swift */,
+				E16FA37A2C0A7B85000D869A /* SongDetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -296,6 +305,7 @@
 			files = (
 				E16FA33E2C0A5EF9000D869A /* LaunchScreen.storyboard in Resources */,
 				E16FA33B2C0A5EF9000D869A /* Assets.xcassets in Resources */,
+				E16FA3792C0A7A56000D869A /* SongDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,12 +330,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E16FA37B2C0A7B85000D869A /* SongDetailViewModel.swift in Sources */,
 				E16FA36C2C0A6416000D869A /* SongTableViewCell.swift in Sources */,
 				E16FA3662C0A62F3000D869A /* Song.swift in Sources */,
 				E16FA3322C0A5EF7000D869A /* AppDelegate.swift in Sources */,
 				E16FA3342C0A5EF7000D869A /* SceneDelegate.swift in Sources */,
 				E16FA3742C0A6763000D869A /* Observable.swift in Sources */,
 				E16FA3632C0A6144000D869A /* SongListViewController.swift in Sources */,
+				E16FA3782C0A7A56000D869A /* SongDetailViewController.swift in Sources */,
 				E16FA3692C0A6362000D869A /* SongViewModel.swift in Sources */,
 				E16FA36F2C0A64A3000D869A /* ColorExtention.swift in Sources */,
 				E16FA3712C0A654D000D869A /* ArtistCollectionViewCell.swift in Sources */,

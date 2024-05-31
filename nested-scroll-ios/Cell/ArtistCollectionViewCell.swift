@@ -7,7 +7,13 @@
 
 import UIKit
 
+protocol ArtistCollectionViewCellDelegate : AnyObject {
+    func onArtistTap(artist:String) -> Void
+}
+
 class ArtistCollectionViewCell: UICollectionViewCell {
+    
+    weak var delegate:ArtistCollectionViewCellDelegate?
     
     public static var identifier : String {
         get{
@@ -60,6 +66,6 @@ class ArtistCollectionViewCell: UICollectionViewCell {
     }
     
     @IBAction func tapFunction(sender: UITapGestureRecognizer) {
-        print("tap working")
+        self.delegate?.onArtistTap(artist: title.text ?? "No Text")
     }
 }

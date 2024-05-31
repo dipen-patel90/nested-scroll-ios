@@ -7,7 +7,13 @@
 
 import UIKit
 
+protocol SongTableViewCellDelegate : AnyObject {
+    func onArtistTap(song:Song?, artist:String) -> Void
+}
+
 class SongTableViewCell: UITableViewCell {
+    
+    weak var delegate: SongTableViewCellDelegate?
     
     public static var identifier : String {
         get{
@@ -25,6 +31,7 @@ class SongTableViewCell: UITableViewCell {
     var collectionView: UICollectionView!
     
     var maxCellHeight: CGFloat = 0
+    var song: Song?
     var artist: [String] = [] {
         didSet {
             collectionView.reloadData()
@@ -103,6 +110,7 @@ class SongTableViewCell: UITableViewCell {
     }
     
     func setData(song:Song) {
+        self.song = song
         artist = song.artist
         
         imgView.image = UIImage(named: song.image)
@@ -141,6 +149,7 @@ extension SongTableViewCell : UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ArtistCollectionViewCell.identifier, for: indexPath) as! ArtistCollectionViewCell
         let title = artist[indexPath.item]
         cell.setData(artist: title)
+        cell.delegate = self
         
         return cell
     }
@@ -163,5 +172,11 @@ extension SongTableViewCell : UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets.init(top: 0, left: 0, bottom: 0, right: 0)
+    }
+}
+
+extension SongTableViewCell : ArtistCollectionViewCellDelegate {
+    func onArtistTap(artist: String) {
+        delegate?.onArtistTap(song: song, artist: artist)
     }
 }

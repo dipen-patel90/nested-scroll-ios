@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+
+class SongDetailViewModel{
+    
+    var song: Song
+    
+    init(song: Song) {
+        self.song = song
+    }
+}
